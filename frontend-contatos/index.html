@@ -1,0 +1,44 @@
+<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <title>Contatos</title> <link rel="stylesheet" href="style.css"> </head> <body>
+<h1>Contatos</h1>
+
+<h2>Buscar</h2>
+
+<input id="filtroNome" placeholder="Nome">
+<input id="filtroCidade" placeholder="Cidade">
+
+<button id="buscar">Buscar</button>
+<button id="limpar">Limpar</button>
+
+<h2 id="titulo">Novo contato</h2>
+
+<form id="form">
+    <input type="hidden" id="id">
+
+    <input id="nome" placeholder="Nome" required>
+    <input id="telefone" placeholder="Telefone" required>
+    <input id="email" type="email" placeholder="E-mail">
+    <input id="cidade" placeholder="Cidade" required>
+
+    <button type="submit">Salvar</button>
+    <button type="button" id="cancelar" hidden>Cancelar</button>
+</form>
+
+<h2>Lista de contatos</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>E-mail</th>
+            <th>Cidade</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody id="lista"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body> </html>
